@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+/* Variables de css*/
+:root {
+    --primary-color: #ff6500;
+    --secondary-color: #1e3e62;
+}
+section{
+    width: 80%;
+    padding: 120px auto;
+    margin: 0 auto;
+}
+section .fila1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+section .fila1 article {
+    width: 50%;
+}
+
+
+.fila1 h2 {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+.fila1 h1{
+    color: var(--secondary-color);
+    font-size: 40px;
+}
+.fila1 p{
+    color: #999;
+    font-size: 20px;
+    padding-top: 36px;
+}
+section .fila2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:100px;
+    transition: 1s;
+    text-align: center;
+    flex-wrap:wrap;
+}
+section .fila2 article {
+    width: 22%;
+    background: #f6f6f6;
+    border-radius: 20px;
+    
+}
+section .fila2 img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.fila2 h3 {
+    color: var(--secondary-color);
+    font-size: 24px;
+    padding: 20px 8px 10px;
+}
+.fila2 h4 {
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+.fila2 .iconos{
+    padding: 0 8px 26px;
+    margin-top: 6px;
+}
+.fila2 i{
+    font-size: 30px;
+    color:#999;
+    margin: 0 7px;
+    transition: 0.5s;
+}
+.fila2 article:hover{
+    box-shadow: 0 0 12px 0 #ff660078;
+    transform: scale(1.06);
+    
+}
+.fila2 article:hover i{
+    color:var(--primary-color);
+    
+}
+/* Responsive tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    section {
+        width: 100%;
+    }
+
+    section .fila1 article {
+        width: 100%;
+    }
+    section .fila2 article {
+        width: 48%;
+        margin-bottom: 40px;
+    }
+    
+}
+
+
+/* Responsive Movil */
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+    section {
+        width: 100%;
+    }
+
+    section .fila1 article {
+        width: 100%;
+    }
+    section .fila2 article {
+        width: 80%;
+        margin:0 auto 40px;
+    }
+    
+}
